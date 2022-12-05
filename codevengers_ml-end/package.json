@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.5",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  },
+  "name": "codevengers",
+  "version": "1.0.0",
+  "description": "machine learning app using node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "server": "HOST=localhost nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "akhil reddy",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
